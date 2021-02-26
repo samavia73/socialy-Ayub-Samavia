@@ -1,0 +1,24 @@
+<form [formGroup]="profileForm">
+    <label>
+        Title
+        <input type="text" formControlName="title">
+    </label>
+
+    <br>
+
+    <label>
+        Link
+        <input type="text" formControlName="link">
+    </label>
+
+    <br>
+
+    <label>
+        Description
+        <input type="text" formControlName="description">
+    </label>
+
+    <br>
+
+    <button class="btn btn-success" (click)="createPost()">Submit</button>
+</form>

@@ -1,0 +1,14 @@
+<ul class="list-group">
+    <li class="list-group-item">
+        <app-post [posts]="book" *ngFor="let book of posts"></app-post>
+    </li>
+</ul>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>AddList</h2>
+            <app-add (addPostEvent)="addItem($event)"></app-add>
+        </div>
+    </div>
+</div>
